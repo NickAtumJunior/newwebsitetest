@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FocusR Consultancy & Technologies</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="./img/assets/favicon.png" type="image/x-icon">
+
+    <!-- Stlylesheet -->
+    <link
+      rel="stylesheet"
+      href="bootstrap/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/font-awesome/css/font-awesome.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/no-ui-slider/jquery.nouislider.css"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/colors/green.css" id="color-skins" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <style>
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: rgb(255, 0, 0);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Start Preloader -->
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="cube cube0"></div>
+        <div class="cube cube1"></div>
+        <div class="cube cube2"></div>
+        <div class="cube cube3"></div>
+        <div class="cube cube4"></div>
+        <div class="cube cube5"></div>
+        <div class="cube cube6"></div>
+        <div class="cube cube7"></div>
+        <div class="cube cube8"></div>
+        <div class="cube cube9"></div>
+        <div class="cube cube10"></div>
+        <div class="cube cube11"></div>
+        <div class="cube cube12"></div>
+        <div class="cube cube13"></div>
+        <div class="cube cube14"></div>
+        <div class="cube cube15"></div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Header -->
+    <header>
+      <nav class="navbar navbar-default navbar-alt" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#main-nav"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand to-top" rel="home" href="#">
+              <img
+                src="img/assets/logo-white.png"
+                alt="Visual"
+                class="logo-big"
+              />
+              <img
+                src="img/assets/logo-dark.png"
+                alt="Visual"
+                class="logo-small"
+              />
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="to-top"> Home </a>
+              </li>
+              <li class="to-section">
+                <a href="#about"> About Us </a>
+              </li>
+              <li class="to-section">
+                <a href="#services"> Services </a>
+              </li>
+              <li class="to-section">
+                <a href="technologies.html"> Technologies </a>
+              </li>
+              <li class="to-section">
+                <a href="industryvertical.html">Industry Vertical</a>
+              </li>
+              <li class="to-section">
+                <a href="#portfolio"> Portfolio </a>
+              </li>
+              <li class="to-section">
+                <a href="#careers"> Careers </a>
+              </li>
+              <li class="to-section">
+                <a href="#contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Home Revolution Slider Parallax Section -->
+    <section id="home-revolution-slider">
+      <div class="hero">
+        <div class="tp-banner-container">
+          <div class="tp-banner">
+            <ul>
+              <!-- SLIDE 1 -->
+              <li
+                data-transition="fade"
+                data-slotamount="7"
+                data-masterspeed="2000"
+                data-thumb="img/backgrounds/bg.jpg"
+                data-delay="10000"
+                data-saveperformance="on"
+                data-title="We Are FocusR"
+              >
+                <img
+                  src="img/backgrounds/bg.jpg"
+                  alt="slidebg1"
+                  data-bgposition="center top"
+                  data-bgfit="cover"
+                  data-bgrepeat="no-repeat"
+                />
+
+                <!-- Home Heading -->
+                <div
+                  class="tp-caption sft"
+                  data-x="center"
+                  data-y="260"
+                  data-speed="1200"
+                  data-start="1100"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <h2 class="home-heading op-1">We Are FocusR</h2>
+                </div>
+                <!-- Home Subheading -->
+                <div
+                  class="tp-caption home-subheading sft"
+                  data-x="center"
+                  data-y="360"
+                  data-speed="1200"
+                  data-start="1350"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <div class="op-1">Together We Can</div>
+                </div>
+                <!-- Home Button -->
+                <div
+                  class="tp-caption home-button sft fadeout"
+                  data-x="center"
+                  data-y="400"
+                  data-speed="1200"
+                  data-start="1550"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <div class="op-1">
+                    <a href="#features" class="btn btn-primary btn-scroll">
+                      WE'RE CREATIVE
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- SLIDE 2 -->
+              <li
+                data-transition="fade"
+                data-slotamount="7"
+                data-masterspeed="2000"
+                data-thumb="img/backgrounds/bg-1.jpg"
+                data-delay="10000"
+                data-saveperformance="on"
+                data-title="Digital Consultancy"
+              >
+                <img
+                  src="img/backgrounds/bg-1.jpg"
+                  alt="slidebg1"
+                  data-bgposition="center top"
+                  data-bgfit="cover"
+                  data-bgrepeat="no-repeat"
+                />
+
+                <!-- Home Heading -->
+                <div
+                  class="tp-caption sft"
+                  data-x="center"
+                  data-y="260"
+                  data-speed="1200"
+                  data-start="1100"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <h2 class="home-heading op-2">A Digital Consultancy</h2>
+                </div>
+                <!-- Home Subheading -->
+                <div
+                  class="tp-caption home-subheading sft fadeout"
+                  data-x="center"
+                  data-y="360"
+                  data-speed="1200"
+                  data-start="1350"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <div class="op-2">Together We Can</div>
+                </div>
+                <!-- Home Button -->
+                <div
+                  class="tp-caption home-button sft fadeout"
+                  data-x="center"
+                  data-y="400"
+                  data-speed="1200"
+                  data-start="1550"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <div class="op-2">
+                    <a href="#about" class="btn btn-primary btn-scroll">
+                      WHAT WE DO
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- SLIDE 3 -->
+              <li
+                data-transition="fade"
+                data-slotamount="7"
+                data-masterspeed="2000"
+                data-thumb="img/backgrounds/bg-2.jpg"
+                data-delay="10000"
+                data-saveperformance="on"
+                data-title="Creative Consultants"
+              >
+                <img
+                  src="img/backgrounds/bg-2.jpg"
+                  alt="slidebg1"
+                  data-bgposition="center top"
+                  data-bgfit="cover"
+                  data-bgrepeat="no-repeat"
+                />
+
+                <!-- Home Heading -->
+                <div
+                  class="tp-caption sft"
+                  data-x="center"
+                  data-y="260"
+                  data-speed="1200"
+                  data-start="1100"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <h2 class="home-heading op-3">Creative Consultants</h2>
+                </div>
+                <!-- Home Subheading -->
+                <div
+                  class="tp-caption home-subheading sft fadeout"
+                  data-x="center"
+                  data-y="360"
+                  data-speed="1200"
+                  data-start="1350"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <div class="op-3">Together We Can</div>
+                </div>
+                <!-- Home Button -->
+                <div
+                  class="tp-caption home-button sft fadeout"
+                  data-x="center"
+                  data-y="400"
+                  data-speed="1200"
+                  data-start="1550"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-endspeed="300"
+                  style="
+                    z-index: 4;
+                    max-width: auto;
+                    max-height: auto;
+                    white-space: normal;
+                  "
+                >
+                  <div class="op-3">
+                    <a href="#team" class="btn btn-primary btn-scroll">
+                      MEET THE TEAM
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="tp-bannertimer"></div>
+          </div>
+          <div class="home-bottom">
+            <div class="container text-center">
+              <div class="move bounce">
+                <a href="#features" class="ion-ios-arrow-down btn-scroll"> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Revolution Slider Parallax Section -->
+
+    <div class="site-wrapper content">
+      <!-- Start Features Section -->
+      <section id="features">
+        <div class="container">
+          <div class="col-md-12 text-center wow fadeInUp">
+            <h3 class="section-title">About FocusR</h3>
+            <p class="subheading">
+              We are a small<span class="highlight"> creative team</span>,
+              trying to enrich the lives of others
+            </p>
+          </div>
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon">
+                <!-- <i class="icon-eyeglasses size-2x highlight"></i>
+                  <i class="icon-eyeglasses back-icon"></i> -->
+                <i class="gg-style" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>SAP</h4>
+                <p class="feature-description">
+                  We have a proven track record of successfully implementing SAP solutions for businesses across various industries. Our expertise in SAP enables us to deliver comprehensive and scalable enterprise resource planning (ERP) systems that optimize business processes, enhance operational efficiency, and drive digital transformation.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon">
+                <!-- <i class="icon-lock-open size-2x highlight"></i>
+                  <i class="icon-lock-open back-icon"></i> -->
+                <i class="gg-radio-check" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Oracle</h4>
+                <p class="feature-description">
+                  We have a proven track record of successfully implementing Oracle ERP solutions for businesses across diverse industries. Our expertise in Oracle ERP enables us to deliver comprehensive and scalable enterprise resource planning systems that streamline business processes, enhance operational efficiency, and drive growth.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon">
+                <!-- <i class="icon-energy size-2x highlight"></i>
+                  <i class="icon-energy back-icon"></i> -->
+                <i class="gg-cloud" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Sales Force</h4>
+                <p class="feature-description">
+                  We have a proven track record of successfully implementing Salesforce solutions for businesses across diverse industries. Our expertise in Salesforce enables us to deliver customized and scalable customer relationship management (CRM) solutions that drive sales growth, improve customer satisfaction, and enhance overall business performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon">
+                <!-- <i class="icon-settings size-2x highlight"></i>
+                  <i class="icon-settings back-icon"></i> -->
+                <i class="gg-home-screen" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Mobile Application Development</h4>
+                <p class="feature-description">
+                  We specialize in designing and developing mobile applications that deliver exceptional user experiences across various platforms and devices. Our team of skilled developers and designers work closely with clients to transform their ideas into intuitive and engaging mobile apps. With a strong focus on innovation, usability, and performance, we have successfully delivered numerous mobile applications for a diverse range of industries and business needs.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon">
+                <!-- <i class="icon-book-open size-2x highlight"></i>
+                  <i class="icon-book-open back-icon"></i> -->
+
+                <i class="gg-desktop" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Web & Desktop Application Development</h4>
+                <p class="feature-description">
+                  We specialize in crafting robust and scalable web and desktop applications that empower businesses to streamline operations, enhance productivity, and deliver exceptional user experiences. Our team of experienced developers and designers leverage the latest technologies and industry best practices to create tailored solutions for a wide range of industries and business needs.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon">
+                <!-- <i class="icon-support size-2x highlight"></i>
+                  <i class="icon-support back-icon"></i> -->
+                <i class="gg-user" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>24/7 Support</h4>
+                <p class="feature-description">
+                  We take pride in offering exceptional 24x7 customer support services to help businesses deliver seamless and efficient assistance to their customers. With our dedicated team of trained professionals and robust support systems, we provide round-the-clock support to ensure customer satisfaction and maximize their experience with your products or services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Features Section -->
+
+      <!-- Start About Section -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-left about-text">
+              <h3 class="wow fadeInUp">Our Story</h3>
+              <p class="wow fadeInUp">
+                At FocusR, we are driven by our passion for technology and our commitment to empowering businesses with innovative software solutions. Since our establishment, we have been dedicated to helping companies leverage the power of technology to achieve their goals, streamline operations, and drive growth.
+
+Our journey began with a small team of like-minded individuals who shared a common vision: to create software that transforms industries and revolutionizes the way businesses operate. We started by understanding the unique challenges faced by our clients and industry trends, which allowed us to develop solutions that address their specific needs
+              </p>
+              <p class="wow fadeInUp">
+                <button type="button" class="btn btn-primary btn-md">
+                  Get in Touch
+                </button>
+              </p>
+            </div>
+            <div class="col-md-6 wow fadeInUp about-text">
+              <!--    <div class="video-container">
+                                <iframe src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff" allowfullscreen></iframe>
+                            </div> -->
+              <h3 class="wow fadeInUp">The Experiance</h3>
+              <div class="progress-bars">
+                <p>Oracle</p>
+                <div class="progress" data-percent="99%">
+                  <div class="progress-bar">
+                    <span class="progress-bar-tooltip">99%</span>
+                  </div>
+                </div>
+                <p>SAP</p>
+                <div class="progress" data-percent="98%">
+                  <div class="progress-bar">
+                    <span class="progress-bar-tooltip">98%</span>
+                  </div>
+                </div>
+                <p>Product Development</p>
+                <div class="progress" data-percent="90%">
+                  <div class="progress-bar">
+                    <span class="progress-bar-tooltip">90%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- Start Fun Facts Section -->
+      <section id="fun-facts" class="parallax-section-5">
+        <div class="container">
+          <div class="col-md-12 text-center white wow fadeInUp">
+            <h3 class="section-title">Some interesting facts about us</h3>
+            <p class="subheading">
+              Interdisciplinary team with
+              <span class="highlight">big ideas</span> and challenges.
+            </p>
+          </div>
+          <div class="counter-row row text-center wow fadeInUp">
+            <div class="col-md-3 col-sm-6 fact-container">
+              <div class="fact">
+                <span class="counter highlight">120</span>+
+                <h4>Happy Clients</h4>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 fact-container">
+              <div class="fact">
+                <span class="counter highlight">85</span>+
+                <h4>Finished Projects</h4>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 fact-container">
+              <div class="fact">
+                <span class="counter highlight">292</span><span>+</span>
+                <h4>Ideas Realized</h4>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 fact-container">
+              <div class="fact">
+                <span class="counter highlight">250</span><span>+</span>
+                <h4>Work Force</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Fun Facts Section -->
+
+      <!-- Start Team Section -->
+      <!-- <section id="team">
+      <div class="container">
+         <div class="col-md-12 text-center wow fadeInUp">
+            <h3 class="section-title">Meet the Crew.</h3>
+            <p class="subheading">Interdisciplinary team with <span class="highlight">big ideas</span> and challenges.</p>
+         </div>
+         <div class="row">
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-1.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>John Visual</h4>
+                  <h5 class="highlight">CEO / Founder</h5>
+                  <p>Vivamus motestues phasellus enim sed orci eu pharetra. </p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-2.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>John Visual</h4>
+                  <h5 class="highlight">CEO / Founder</h5>
+                  <p>Vivamus motestues phasellus enim sed orci eu pharetra.</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-3.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>Jane Wunder</h4>
+                  <h5 class="highlight">PR Manager</h5>
+                  <p>Vivamus motestues phasellus enim sed orci eu pharetra.</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-4.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>Mike Nicecode</h4>
+                  <h5 class="highlight">Web Developer</h5>
+                  <p>Vivamus motestues phasellus enim sed orci eu pharetra.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section> -->
+      <!-- End Team Section -->
+
+      <!-- Start Quote Section -->
+      <section id="quote" class="parallax-section-6">
+        <div class="container">
+          <div class="row wow fadeInUp">
+            <div class="col-lg-12 wow fadeInUp" style="z-index: 3">
+              <div id="quote-slider" class="owl-carousel">
+                <div>
+                  <blockquote>
+                    <i class="icon-left ion-quote ion-2x highlight"></i>
+                    <span>
+                      The Difference between ordinary and extraordinary<br />
+                      is just that little extra!
+                    </span>
+                    <i class="icon-right ion-quote ion-2x highlight"></i>
+                  </blockquote>
+                  <h4 class="quote-author highlight">FocusR Team</h4>
+                </div>
+                <div>
+                  <blockquote>
+                    <i class="icon-left ion-quote ion-2x highlight"></i>
+                    <span>
+                      A Perfect Design is made with Passion, Dedication,<br />
+                      and a lots of Coffee!
+                    </span>
+                    <i class="icon-right ion-quote ion-2x highlight"></i>
+                  </blockquote>
+                  <h4 class="quote-author highlight">FocusR Team</h4>
+                </div>
+                <div>
+                  <blockquote>
+                    <i class="icon-left ion-quote ion-2x highlight"></i>
+                    <span>
+                      What separates design from art is that design is<br />
+                      meant to be... functional.
+                    </span>
+                    <i class="icon-right ion-quote ion-2x highlight"></i>
+                  </blockquote>
+                  <h4 class="quote-author highlight">FocusR Team</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Quote Section -->
+
+      <!-- Start Portfolio Section -->
+      <!-- <section id="portfolio" style="position: relative;">
+      <div class="separator"></div>
+      <div class="container-fluid">
+         <div class="col-md-12 text-center">
+            <h3 class="section-title wow fadeInUp">Greatest Works.</h3>
+            <p class="subheading wow fadeInUp">Creating products and services that <span class="highlight">transform brands</span>.</p>
+         </div>
+         <div id="filters-container-fullwidth" class="cbp-l-filters-alignCenter wow fadeInUp">
+            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".identity" class="cbp-filter-item">Identity
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".web-design" class="cbp-filter-item">Web Design
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".graphic" class="cbp-filter-item">Graphic
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".logo" class="cbp-filter-item">Logo
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".motion" class="cbp-filter-item">Motion
+               <div class="cbp-filter-counter"></div>
+            </div>
+         </div>
+         <div id="grid-container-fullwidth" class="cbp-l-grid-fullScreen">
+            <ul>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/portfolio/1.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Future Trend</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/portfolio/2.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/2.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project2.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Pro Bicycle</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects web-design">
+                  <div class="img">
+                     <img src="img/portfolio/3.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/3.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project3.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Door Cover</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects motion identity">
+                  <div class="img">
+                     <img src="img/portfolio/4.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a class="cbp-lightbox" href="https://www.youtube.com/watch?v=3wbvpOIIBQA" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project4.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Pro Close-up</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity">
+                  <div class="img">
+                     <img src="img/portfolio/5.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/5.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project5.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Bohemian Coding</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects motion logo">
+                  <div class="img">
+                     <img src="img/portfolio/6.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project6.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Poster Wall</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects web-design">
+                  <div class="img">
+                     <img src="img/portfolio/7.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/7.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project7.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Red Bridge</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects web-design">
+                  <div class="img">
+                     <img src="img/portfolio/8.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/8.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project8.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">V8 M52 Engine</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity motion">
+                  <div class="img">
+                     <img src="img/portfolio/9.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="http://vimeo.com/16465813" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project9.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Ergonomic Pad</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects web-design graphic">
+                  <div class="img">
+                     <img src="img/portfolio/10.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/10.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project10.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Cooling Tower</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects graphic logo">
+                  <div class="img">
+                     <img src="img/portfolio/11.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/11.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project11.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Still Motion</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects graphic logo">
+                  <div class="img">
+                     <img src="img/portfolio/12.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/portfolio/fullsize/12.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project12.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Print Design</li>
+                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="cbp-l-loadMore-button">
+            <a href="projects/loadMore.html" class="cbp-l-loadMore-button-link wow fadeInUp">
+               SHOW ME MORE
+            </a>
+            Portfolio AJAX load more button will be functional only on your server. Upload to your server when testing.
+          </div>
+      </div>
+   </section>   -->
+      <!-- End Portfolio Section -->
+
+      <!-- Start Get Connected -->
+      <section id="services" class="parallax-section-9">
+        <div class="container">
+          <div class="col-md-12 text-center">
+            <h3 class="section-title wow fadeInUp">What we do.</h3>
+            <p class="subheading wow fadeInUp">
+              We use <span class="highlight">our expertise</span> to extend your
+              brand.
+            </p>
+          </div>
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon" style="color: #1d267d">
+                <i class="gg-browser"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Development</h4>
+                <p class="feature-description">
+                  At FocusR, we specialize in software development, leveraging the latest technologies and industry best practices to deliver high-quality and innovative solutions. Our team of experienced developers, designers, and project managers work together to bring our clients' ideas to life and create software that drives their success.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <div class="feature-icon">
+                <i class="gg-briefcase" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Implementation</h4>
+                <p class="feature-description">
+                  We specialize in implementing cutting-edge software solutions, ensuring seamless integration and successful deployment across your organization. Our implementation services cover a wide range of software systems, enabling businesses to leverage technology effectively and achieve their objectives.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <div class="feature-icon">
+                <i class="gg-bolt" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Upgrade & Support</h4>
+                <p class="feature-description">
+                  We provide comprehensive upgrade and support services to ensure that your software systems remain up-to-date, optimized, and fully functional. Our dedicated team of experts is committed to delivering seamless upgrades, addressing issues promptly, and providing ongoing support to keep your systems running smoothly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <div class="feature-icon">
+                <i class="gg-calibrate" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Process Automation</h4>
+                <p class="feature-description">
+                  At FocusR, we specialize in developing and implementing process automation solutions to streamline your business operations, increase efficiency, and drive productivity. Our expert team leverages cutting-edge technologies and industry best practices to design and deploy automation solutions that eliminate manual tasks, reduce errors, and enhance overall workflow efficiency.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <div class="feature-icon">
+                <i class="gg-debug" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Testing & Auditing</h4>
+                <p class="feature-description">
+                  We provide comprehensive testing and auditing services to ensure the quality, reliability, and security of your software systems. Our expert team of testers and auditors employ industry-standard methodologies and best practices to thoroughly evaluate your applications, identify vulnerabilities, and deliver reliable solutions that meet the highest standards of quality.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <div class="feature-icon">
+                <i class="gg-bot" style="color: #1d267d"></i>
+              </div>
+              <div class="feature-info">
+                <h4>Training</h4>
+                <p class="feature-description">
+                  At FocsuR, we offer comprehensive training services to empower individuals and organizations with the knowledge and skills they need to succeed in the digital landscape. Our training programs are designed to enhance technical expertise, promote professional development, and enable effective utilization of software systems and technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- Start Clients Section -->
+      <section id="clients">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="section-title wow fadeInUp">We have best partners</h3>
+              <p class="subheading wow fadeInUp">
+                Meet our partners,most of the most well known companies.
+              </p>
+            </div>
+            <div class="clients">
+              <div id="client-slider" class="owl-carousel">
+                <div class="item">
+                  <img
+                    src="img/oracle/logo_oracle-ebusiness-suite_module-11.png"
+                    alt=""
+                  />
+                </div>
+                <div class="item">
+                  <img src="img/oracle/oracle-fusion.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="img/oracle/sap-hana.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="img/oracle/power-bi.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="img/oracle/qlik-white.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="img/oracle/salesforce.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="img/oracle/sap.png" alt="" />
+                </div>
+                <!-- <div class="item">
+                     <img src="img/clients/logo-8-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-9-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-10-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-11-dark.png" alt="" />
+                  </div>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Clients Section -->
+      <!-- start own modified portfolio -->
+
+      <section id="portfolio" class="parallax-section-9">
+        <div class="container">
+          <div class="col-md-12 text-center">
+            <h3 class="section-title wow fadeInUp">What we did</h3>
+            <p class="subheading wow fadeInUp">
+              We have <span class="highlight">experts</span> to enthusiase your
+              brand.
+            </p>
+          </div>
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <!-- <div class="feature-icon" style="color:#1d267d;">
+                  <i class="gg-browser"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>E-Procurement Web Application</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Technologies Used: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                    React,Springboot,REST,Redux
+                  </span>
+                </p>
+                <p class="feature-description">
+                  We take pride in showcasing our expertise in developing an advanced e-procurement web application using a robust technology stack that includes Oracle, React, and Spring Boot. This project aimed to streamline the procurement process, automate workflows, and enhance efficiency for our client in the procurement industry.
+                </p>
+                <button class="owm-btn-primary" id="myBtn">Demo Video</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-briefcase" style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>
+                  Ticketing Web <br />
+                  Application
+                </h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Technologies Used: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                    Angular,Springboot,REST,Redux,MysQl,Oracle
+                  </span>
+                </p>
+                <p class="feature-description">
+                  We are delighted to present our successful development of a robust ticketing web application using a powerful technology stack that includes Oracle, Angular, and Spring Boot. This project aimed to provide our client with an efficient and user-friendly ticketing system to manage customer inquiries, support requests, and issue tracking.
+                </p>
+                <button class="owm-btn-primary">Demo Video</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-bolt" style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>
+                  Dealer Portal Web <br />
+                  Application
+                </h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Technologies Used: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                    Angular,Springboot,REST,Redux,MysQl,Oracle
+                  </span>
+                </p>
+                <p class="feature-description">
+                  We are proud to present our successful development of a comprehensive dealer portal web application using a powerful technology stack that includes Oracle, Angular, Spring Boot, and REST. This project aimed to provide our client with a robust and user-friendly portal to manage dealer interactions, streamline processes, and enhance collaboration.
+                </p>
+                <button class="owm-btn-primary">Demo Video</button>
+              </div>
+            </div>
+          </div>
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-calibrate"  style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>Supplier Collabration Web Application</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Technologies Used: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                    React,Springboot,REST,Redux,MysQl,Oracle
+                  </span>
+                </p>
+                <p class="feature-description">
+                  We are excited to showcase our successful development of a supplier collaboration web application using a powerful technology stack that includes Oracle, React, Spring Boot, and REST. This project aimed to provide our client with an advanced platform to streamline supplier interactions, improve communication, and enhance collaboration.
+                </p>
+                <button class="owm-btn-primary">Demo Video</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-debug"  style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>Barcode Mobile Application</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Technologies Used: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                    ReactNative,Express JS,MysQl,Oracle
+                  </span>
+                </p>
+                <p class="feature-description">
+                  We are excited to present our successful development of a barcode creation mobile application using a powerful technology stack that includes Oracle, React Native, Node.js, Express.js, and REST. This project aimed to provide our client with a user-friendly and efficient mobile application to generate barcodes on the go.
+                </p>
+                <button class="owm-btn-primary">Demo Video</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-bot" style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>
+                  Timesheet Web <br />
+                  Application
+                </h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Technologies Used: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                    React,Springboot,REST,MysQl
+                  </span>
+                </p>
+                <p class="feature-description">
+                  We are thrilled to present our successful development of a timesheet web application using a robust technology stack that includes MySQL, React, Spring Boot, and REST. This project aimed to provide our client with a reliable and efficient platform for managing employee timesheets and streamlining time tracking processes.
+                </p>
+                <button class="owm-btn-primary" id="dummy-dialog">
+                  Demo Video
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modal for Video One -->
+      <!-- demo video modal -->
+
+      <!-- demo video modal ends-->
+      <!-- Modal for Video One ends -->
+      <!-- Start Price List -->
+      <!-- <section id="price-list">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3 class="section-title wow fadeInUp"> Pricing Table </h3>
+               <p class="subheading wow fadeInUp">Meet our clients, some of the most well known companies.</p>
+            </div>
+            <div class="pricing_table">
+               <div class="container">
+                  <div class="col-md-3 col-sm-6">
+                     <div class="planbox">
+                        <div class="title">
+                           <h4><strong>Starter</strong></h4>
+                        </div>
+                        <div class="prices">
+                           <strong>$2.99<i>/M</i></strong>
+                           <b>Regularly <em>$4.99</em></b>
+                           <a href="#">
+                              Sign Up
+                           </a>
+                        </div>
+                        <ul>
+                           <li><strong>Unlimited</strong> Web Space</li>
+                           <li><strong>FREE</strong> Site Building Tools</li>
+                           <li><strong>FREE</strong> Domain Registar</li>
+                           <li><strong>24/7/365</strong> Support </li>
+                           <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
+                           <li><strong>99.9%</strong> Service Uptime</li>
+                           <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                        </ul>
+                     </div>
+                  </div>
+                   end plan -->
+
+      <!-- <div class="col-md-3 col-sm-6">
+                     <div class="planbox highlight">
+                        <div class="title">
+                           <h4 class="caps"><strong>Business</strong></h4>
+                        </div>
+                        <div class="prices">
+                           <strong>$9.75<i>/M</i></strong>
+                           <b>Regularly <em>$16.99</em></b>
+                           <a href="#">
+                              Sign Up
+                           </a>
+                        </div>
+                        <ul>
+                           <li><strong>Unlimited</strong> Web Space</li>
+                           <li><strong>FREE</strong> Site Building Tools</li>
+                           <li><strong>FREE</strong> Domain Registar</li>
+                           <li><strong>24/7/365</strong> Support </li>
+                           <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
+                           <li><strong>99.9%</strong> Service Uptime</li>
+                           <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                        </ul>
+                     </div>
+                  </div> -->
+      <!-- end plan -->
+      <!--                   
+                  <div class="col-md-3 col-sm-6">
+                     <div class="planbox">
+                        <div class="title">
+                           <h4 class="caps"><strong>Premium</strong></h4>
+                        </div>
+                        <div class="prices">
+                           <strong>$45.50<i>/M</i></strong>
+                           <b>Regularly <em>$90.50</em></b>
+                           <a href="#">
+                              Sign Up
+                           </a>
+                        </div>
+                        <ul>
+                           <li><strong>Unlimited</strong> Web Space</li>
+                           <li><strong>FREE</strong> Site Building Tools</li>
+                           <li><strong>FREE</strong> Domain Registar</li>
+                           <li><strong>24/7/365</strong> Support </li>
+                           <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
+                           <li><strong>99.9%</strong> Service Uptime</li>
+                           <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                        </ul>
+                     </div>
+                  </div> -->
+      <!-- end plan -->
+
+      <!-- <div class="col-md-3 col-sm-6 last">
+                     <div class="planbox">
+                        <div class="title">
+                           <h4 class="caps"><strong>Dedicated</strong></h4>
+                        </div>
+                        <div class="prices">
+                           <strong>$100<i>/M</i></strong>
+                           <b>Regularly <em>$200</em></b>
+                           <a href="#">
+                              Sign Up
+                           </a>
+                        </div>
+                        <ul>
+                           <li><strong>Unlimited</strong> Web Space</li>
+                           <li><strong>FREE</strong> Site Building Tools</li>
+                           <li><strong>FREE</strong> Domain Registar</li>
+                           <li><strong>24/7/365</strong> Support </li>
+                           <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
+                           <li><strong>99.9%</strong> Service Uptime</li>
+                           <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                        </ul>
+                     </div>
+                  </div> -->
+      <!-- end plan -->
+
+      <!-- </div>
+            </div> -->
+      <!-- end hosting plans -->
+      <!-- </div>
+      </div>
+   </section> -->
+      <!-- End Price List -->
+
+      <!-- Start Call to Action 1 -->
+      <!-- <section id="call-to-action-1" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="wow fadeInUp">FEEL LIKE WORKING WITH US?</h3>
+              <p class="wow fadeInUp">
+                If you are passionate to explore the unexplored, come and join
+                our vibrant team "FocusR".
+              </p>
+              <a href="#contact" class="btn btn-primary btn-scroll">
+                Apply now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Call to Action 1 -->
+
+      <!-- Start Testimonials Section -->
+      <!-- <section id="testimonials" class="parallax-section-4">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3 class="section-title white wow fadeInUp">What clients say.</h3>
+               <p class="subheading grey wow fadeInUp">What People Say's About Us</p>
+            </div>
+            <div class="col-md-12 text-center wow fadeInUp">
+               <div id="owl-testimonials" class="owl-carousel">
+                  <div>
+                     <div class="testimonial">
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> This guys are amazing! They were so quick to respond and let me tell you... they are all knowing!<br>
+                        I highly recommend their themes! They are all about making their clients happy. </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </div>
+                     <div class="testimonial-name">
+                        <img src="img/clients/client-1.png" alt="client">
+                        <h4 class="white">Jack Walles</h4>
+                        <a href="#">
+                           www.google.com
+                        </a>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="testimonial">
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> This one is undoubtedly the best template I ever bought! Easy to edit, nicely coded and I highly recommend it.<br>
+                        It's wonderful design and also very fast and excelent support. </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </div>
+                     <div class="testimonial-name">
+                        <img src="img/clients/client-2.png" alt="client">
+                        <h4 class="white">Jane Smith</h4>
+                        <a href="#">
+                           www.facebook.com
+                        </a>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="testimonial">
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> Visual is well documented and well coded, but the best of all is the friendly and quick support behind it.<br>
+                        Visual Design did a great and dedicated job. Thank you for this awesome theme! </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </div>
+                     <div class="testimonial-name">
+                        <img src="img/clients/client-3.png" alt="client">
+                        <h4 class="white">jonathan warton</h4>
+                        <a href="#">
+                           www.msn.com
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section> -->
+   <!-- dummy style page starts -->
+   <section id="dummy" style="padding: 2rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-left about-text">
+          <h2 class="wow fadeInUp">Join Our Festivities Where Every Achievement Becomes a Reason to Celebrate!</h2>
+          <p class="wow fadeInUp">
+            Join the vibrant tapestry of celebrations at FocusR, where we believe in embracing every milestone, triumph, and moment of joy. Our dynamic and spirited team knows how to revel in success and create unforgettable memories.
+
+            At FocusR, we understand the importance of celebrating achievements. From product launches and project milestones to team accomplishments and personal victories, we come together to toast the victories that shape our journey.
+          </p>
+          <p class="wow fadeInUp">
+            <button type="button" class="btn btn-primary btn-md">
+              JOIN US
+            </button>
+          </p>
+        </div>
+        <div class="col-md-6 wow fadeInUp about-text">
+             <div class="video-container">
+                            <iframe src="./img/assets/Focusr 5th Ani.mp4" allowfullscreen  ></iframe>
+                        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- dummy style ends -->
+      <!-- End Testimonials Section -->
+      <!-- careers section starts -->
+      <section id="careers" class="parallax-section-9" style="background-color: #f3f4ff;padding-top: 5%;">
+        <div class="container">
+          <div class="col-md-12 text-center">
+            <h3 class="section-title wow fadeInUp">Unlock Your Potential: Join Our Team and Ignite Your Career Journey!</h3>
+            <p class="subheading wow fadeInUp">
+              Join Our Team and Shape the Future: Explore<span class="highlight"></span> Exciting Career </span>  Opportunities with Us!
+            </p>
+          </div>
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <!-- <div class="feature-icon" style="color:#1d267d;">
+                  <i class="gg-browser"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>Oracle EBS Finance Functional Consultant</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  AP, AR, GL, FA etc., Strong experience in GST, Ebtax.
+                  </span>
+                </p>
+                <p class="feature-description">
+                  2+ years of experience in oracle finance modules such as AP, AR, GL, FA etc., Strong experience in GST, Ebtax. Location - Delhi, NCR
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-briefcase" style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>
+                  Java/J2EE - Fullstack Developer
+                </h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  Java,Spring,Spring Boot,REST,SQL 
+                  </span>
+                </p>
+                <p class="feature-description">
+                  2+ yrs in Java, Spring, Web services, Spring Boot based REST API development,Strong SQL experience with the ability to write Complex Queries, and Triggers. Strong understanding of J2EE .
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-bolt" style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>
+                  DBA - Core / APPS 
+                </h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  Database Upgrade, Migration, Patch Installation 12c &19c versions and Implementation
+                  </span>
+                </p>
+                <p class="feature-description">
+                  Looking for Core DBA with good knowledge in Database Upgrade, Migration, Patch Installation 12c &19c versions and Implementation. Oracle apps DBA experience added advantage .
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-calibrate"  style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>Oracle Apps Technical Consultant</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  Oracle Apps R12,interfaces, Oracle forms, Oracle reports and workflows.SQL and PL/SQL
+                  </span>
+                </p>
+                <p class="feature-description">
+                  Minimum 2+ years of relevant experience in Oracle Apps R12. Experience on interfaces, Oracle forms, Oracle reports and workflows. Strong in SQL and PL/SQL . Experience in implementation/Support projects on R12.
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-debug"  style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4> Oracle HRMS/HCM Functional Consultant</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  Oracle EBS R12 HRMS–Core HR, Absence Management, OAB, Compensation
+                  </span>
+                </p>
+                <p class="feature-description">
+                  2-5 yrs exp with EBS R12 & in Oracle Upgrade Implementations.Expertise in Oracle EBS R12 HRMS –Core HR, Absence Management, OAB, Compensation, Payroll.Have been part of various Implementation as well as support projects in Oracle HRMS/HCM.
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-bot" style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>
+                  Oracle Developer- PL/SQL
+                </h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  Oracle PL/SQL and Unix Shell scripting, Oracle 11g, Forms 6i/10g/11g & Reports
+                  </span>
+                </p>
+                <p class="feature-description">
+                  2+ years of strong exp in Oracle PL/SQL and Unix Shell scripting, Oracle 11g, Forms 6i/10g/11g & Reports. Should be interested in moving to Oracle apps technical & Should not have any travel constraints.
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-calibrate"  style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>Business Analyst - ERP domain</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                 Any ERP Softwares & Excellent communication with mail etiquette
+                  </span>
+                </p>
+                <p class="feature-description">
+                  2+ years of experience in any ERP Softwares & Analyze customers requirements and business workflow in order to map them properly.Experience in delivering multiple ERP Projects.Excellent communication with mail etiquette
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-debug"  style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4> BI Specialist</h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  ODI Designer, OACS, Oracle DV, ODI, and RPD,OBIEE 12c architecture.
+                  </span>
+                </p>
+                <p class="feature-description">
+                  Good Understanding of OBIEE 12c architecture, Detailed knowledge of Hyperion.Rich experience in developing Interfaces from multiple source systems using ODI Designer, OACS, Oracle DV, ODI, and RPD.
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 white feature-column">
+              <!-- <div class="feature-icon">
+                  <i class="gg-bot" style="color:#1d267d;"></i>
+               </div> -->
+              <div class="feature-info">
+                <h4>
+                  Oracle Developer- PL/SQL
+                </h4>
+                <p
+                  class="feature-description"
+                  style="color: #1d267d; font-weight: 800"
+                >
+                  Skills Wanted: <br />
+                  <span
+                    style="color: #7c84cb; font-weight: 600; font-size: small"
+                  >
+                  Oracle PL/SQL and Unix Shell scripting, Oracle 11g, Forms 6i/10g/11g & Reports
+                  </span>
+                </p>
+                <p class="feature-description">
+                  2+ years of strong exp in Oracle PL/SQL and Unix Shell scripting, Oracle 11g, Forms 6i/10g/11g & Reports. Should be interested in moving to Oracle apps technical & Should not have any travel constraints.
+                </p>
+                <a class="owm-btn-primary" href="#contact">Apply Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- career section ends -->
+  <!-- Videos Are Here -->
+  <!-- E-Proc Video starts -->
+
+
+      
+
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>e-Procurement Application Demo</h2>
+          </div>
+          <div class="modal-body">
+            <video width="100%" height="100%"  controls>
+              <source src="./video/e-proc.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="modal-footer">
+            <a class="btn-primary-full" href="#contact">Book Demo</a>
+          </div>
+        </div>
+      
+      </div>
+<!-- E-Proc Video Ends -->
+
+      <!-- Start Contact Form Section -->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="section-title wow fadeInUp">Contact us</h3>
+              <p class="subheading wow fadeInUp">Let's Work Together.</p>
+            </div>
+            <div class="col-md-7 wow fadeInUp">
+              <div id="message"></div>
+              <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
+              <form
+                method="post"
+                action="php/contact-form.php.htm"
+                name="contactform"
+                id="contactform"
+              >
+                <fieldset>
+                  <input name="name" type="text" id="name" placeholder="Name" />
+                  <input
+                    name="email"
+                    type="text"
+                    id="email"
+                    placeholder="Email"
+                  />
+                  <input
+                    name="subject"
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </fieldset>
+                <fieldset>
+                  <textarea
+                    name="comments"
+                    cols="40"
+                    rows="3"
+                    id="comments"
+                    placeholder="Message"
+                  ></textarea>
+                </fieldset>
+                <input
+                  type="submit"
+                  class="submit"
+                  id="submit"
+                  value="Send Message"
+                />
+              </form>
+            </div>
+            <div class="col-md-5 wow fadeInLeft">
+              <!-- FocusR Consultancy and Technologies Private Limited, Y83, 4th St, Y Block, Anna Nagar, Chennai, Tamil Nadu 600040 -->
+              <h4>Corporate Office:</h4>
+              <address>
+                Y83 4th St, Y Block<br />
+                Anna Nagar, Chennai, Tamil Nadu 600040<br />
+                <abbr>&#9742;&#65039;</abbr> +91 44 45500999
+              </address>
+              <h4>Competency Centre:</h4>
+              <address>
+                3rd Floor,HaraKara Complex<br />
+                Suramangalam, Salem, Tamil Nadu 636005 <br />
+                <abbr>&#9742;&#65039;</abbr> +91 44 45500999
+              </address>
+              <h4>Contact Us :</h4>
+              <address>
+                <abbr>
+                  <strong> Phone </strong>
+                </abbr>
+                : +91 44 45500999 <br />
+                <abbr>
+                  <strong>Fax </strong>
+                </abbr>
+                : (123) 456-7890 <br />
+                <abbr>
+                  <strong>Email </strong>
+                </abbr>
+                : enquiry@focusrtech.com
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Form Section -->
+
+      <!-- Start Google Map Section -->
+      <div id="map"></div>
+      <!-- End Google Map Section -->
+
+      <!-- Start Footer 1 -->
+      <footer id="footer">
+        <!-- End Footer Widgets -->
+
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 class="section-title wow fadeInUp">FocusR</h3>
+                <p class="wow fadeInUp">
+                  All Rights Reserved. Copyright © 2023
+                  <a href="https://www.focusrtech.com" target="_blank"
+                    >FocusR Consultancy and Technology</a
+                  >
+                </p>
+                <ul class="social-icons subheading">
+                  <li>
+                    <a href="https://www.twitter.com/Focusrtech">
+                      <i class="icon ion-social-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/focusrtechnologies">
+                      <i class="icon ion-social-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon ion-social-instagram-outline"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon ion-social-skype"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/focusr-consultancy-and-technologies-pvt-ltd">
+                      <i class="icon ion-social-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Footer Copyright -->
+      </footer>
+      <!-- End Footer 1 -->
+
+      <!-- Start Back To Top -->
+      <a id="back-to-top">
+        <i class="icon ion-chevron-up"></i>
+      </a>
+      <!-- End Back To Top -->
+    </div>
+    <!-- End Site Wrapper -->
+    <!-- jQuery -->
+    <script>
+      $(document).ready(() => {
+        $("#e-proc-btn").click(() => {
+          $('.ui.basic.modal')
+            .modal('show')
+        })
+      })
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+
+    <script type="text/javascript" src="js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins/moderniz.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/smoothscroll.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/no-ui-slider/jquery.nouislider.all.min.js"
+    ></script>
+    <script type="text/javascript" src="js/plugins/revslider.min.js"></script>
+    <script type="text/javascript" src="js/plugins/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/plugins/parallax.min.js"></script>
+    <script type="text/javascript" src="js/plugins/easign1.3.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/cubeportfolio.min.js"
+    ></script>
+    <script type="text/javascript" src="js/plugins/owlcarousel.min.js"></script>
+    <script type="text/javascript" src="js/plugins/tweetie.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js"
+    ></script>
+    <script type="text/javascript" src="js/plugins/gmap3.min.js"></script>
+    <script type="text/javascript" src="js/plugins/wow.min.js"></script>
+    <script type="text/javascript" src="js/plugins/counterup.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

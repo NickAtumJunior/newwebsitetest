@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M88 0L88 0L88 88L0 88L0 0L88 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Angularjs" clip-path="url(#clip_1)">
+    <path d="M88 0L88 0L88 88L0 88L0 0L88 0Z" id="Angularjs" fill="none" stroke="none" />
+    <path d="M43.8772 3.66667L5.5 17.0225L11.5647 66.748L43.9175 84.3333L76.4372 66.5097L82.5 16.786L43.8772 3.66667Z" id="Shape" fill="#BDBDBD" stroke="none" />
+    <path d="M78.4997 19.2995L44 7.58083L44 80.1075L73.0253 64.1978L78.4997 19.2995Z" id="Shape" fill="#B71C1C" stroke="none" />
+    <path d="M43.8918 7.54417L9.4985 19.514L14.9747 64.4288L43.9102 80.1552L44 80.1075L44 7.58083L43.8918 7.54417Z" id="Shape" fill="#DD2C00" stroke="none" />
+    <path d="M44 10.9927L44 28.424L59.7263 62.3333L67.8095 62.3333L44 10.9927Z" id="Shape" fill="#BDBDBD" stroke="none" />
+    <path d="M20.1905 62.3333L28.2737 62.3333L44 28.424L44 10.9927L20.1905 62.3333Z" id="Shape" fill="#EEEEEE" stroke="none" />
+    <path d="M44 44L55 44L55 51.3333L44 51.3333L44 44Z" id="Shape" fill="#BDBDBD" stroke="none" />
+    <path d="M33 44L44 44L44 51.3333L33 51.3333L33 44Z" id="Shape" fill="#EEEEEE" stroke="none" />
+  </g>
+</svg>
